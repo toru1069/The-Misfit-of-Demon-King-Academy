@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地名一覧</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="summary.html">ホーム</a>
+            <a href="魔法.html">魔法一覧</a>
+            <a href="魔法具.html">魔法具一覧</a>
+            <a href="キャラクター.html">キャラクター一覧</a>
+            <a href="地名.html" class="active">地名一覧</a>
+            <a href="用語.html">用語一覧</a>
+            <button class="dark-mode-toggle">ダークモード</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="地名を検索 (例: ディルヘイド)">
+        </div>
+        <div class="place-list" id="placeList">
+            <!-- 初期はなし -->
+        </div>
+
+        <div class="new-place-form">
+            <h2>新しい地名を追加</h2>
+            <input type="text" id="newPlaceTitle" placeholder="地名 (例: ＜新しい地名＞)">
+            <textarea id="newPlaceDescription" placeholder="説明"></textarea>
+            <button id="addPlaceButton">追加</button>
+        </div>
+    </div>
+
+    <script src="js/place.js"></script>
+</body>
+</html>

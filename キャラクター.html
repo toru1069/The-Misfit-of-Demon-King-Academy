@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャラクター一覧</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="summary.html">ホーム</a>
+            <a href="魔法.html">魔法一覧</a>
+            <a href="魔法具.html">魔法具一覧</a>
+            <a href="キャラクター.html" class="active">キャラクター一覧</a>
+            <a href="地名.html">地名一覧</a>
+            <a href="用語.html">用語一覧</a>
+            <button class="dark-mode-toggle">ダークモード</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="キャラクターを検索 (例: アノス)">
+        </div>
+        <div class="character-list" id="characterList">
+            <!-- 初期のキャラクターはなし -->
+        </div>
+
+        <div class="new-character-form">
+            <h2>新しいキャラクターを追加</h2>
+            <input type="text" id="newCharacterTitle" placeholder="キャラクター名 (例: ＜新しいキャラクター＞)">
+            <textarea id="newCharacterDescription" placeholder="キャラクターの説明"></textarea>
+            <button id="addCharacterButton">追加</button>
+        </div>
+    </div>
+
+    <script src="js/character.js"></script>
+</body>
+</html>

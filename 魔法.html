@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔法一覧</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="summary.html">ホーム</a>
+            <a href="魔法.html" class="active">魔法一覧</a>
+            <a href="魔法具.html">魔法具一覧</a>
+            <a href="キャラクター.html">キャラクター一覧</a>
+            <a href="地名.html">地名一覧</a>
+            <a href="用語.html">用語一覧</a>
+            <button class="dark-mode-toggle">ダークモード</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="魔法を検索 (例: 成長)">
+        </div>
+        <div class="magic-list" id="magicList">
+            <!-- 初期の魔法はなし -->
+        </div>
+
+        <div class="new-magic-form">
+            <h2>新しい魔法を追加</h2>
+            <input type="text" id="newMagicTitle" placeholder="魔法名 (例: ＜新しい魔法＞)">
+            <textarea id="newMagicDescription" placeholder="魔法の説明"></textarea>
+            <button id="addMagicButton">追加</button>
+        </div>
+    </div>
+
+    <script src="js/magic.js"></script>
+</body>
+</html>

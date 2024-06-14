@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用語一覧</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="summary.html">ホーム</a>
+            <a href="魔法.html">魔法一覧</a>
+            <a href="魔法具.html">魔法具一覧</a>
+            <a href="キャラクター.html">キャラクター一覧</a>
+            <a href="地名.html">地名一覧</a>
+            <a href="用語.html" class="active">用語一覧</a>
+            <button class="dark-mode-toggle">ダークモード</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="用語を検索 (例: 魔眼)">
+        </div>
+        <div class="terminology-list" id="terminologyList">
+            <!-- 初期はなし -->
+        </div>
+
+        <div class="new-terminology-form">
+            <h2>新しい用語を追加</h2>
+            <input type="text" id="newTerminologyTitle" placeholder="用語名 (例: ＜新しい用語＞)">
+            <textarea id="newTerminologyDescription" placeholder="用語の説明"></textarea>
+            <button id="addTerminologyButton">追加</button>
+        </div>
+    </div>
+
+    <script src="js/terminology.js"></script>
+</body>
+</html>
